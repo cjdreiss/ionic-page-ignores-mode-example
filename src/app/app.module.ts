@@ -5,21 +5,32 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { DefaultPageModule } from '../pages/default/default.module';
+import { SecondaryPageModule } from '../pages/secondary/secondary.module';
+import { ModebreakPage } from '../pages/modebreak/modebreak';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    ModebreakPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    DefaultPageModule,
+    SecondaryPageModule,
+    IonicModule.forRoot(MyApp, {
+      mode: 'md',
+      ios: {
+        scrollAssist: false,
+        autoFocusAssist: false,
+        inputBlurring: false
+      }
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    ModebreakPage
   ],
   providers: [
     StatusBar,
