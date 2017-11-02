@@ -2,29 +2,24 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the SecondaryPage page.
+ * Generated class for the ThirdPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
-@IonicPage({
-  name: 'secondary',
-  segment: 'default/secondary/:params',
-  defaultHistory: ['default',]
-})
+@IonicPage()
 @Component({
-  selector: 'page-secondary',
-  templateUrl: 'secondary.html',
+  selector: 'page-third',
+  templateUrl: 'third.html',
 })
-export class SecondaryPage {
-  public params;
+export class ThirdPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.params = this.navParams.get('params')
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SecondaryPage');
+    console.log('ionViewDidLoad ThirdPage');
   }
 
 }

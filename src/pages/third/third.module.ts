@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ModebreakPage } from './modebreak';
+import { ThirdPage } from './third';
 
 @NgModule({
   declarations: [
-    ModebreakPage,
+    ThirdPage,
   ],
   imports: [
-    IonicPageModule.forChild(ModebreakPage),
+    IonicPageModule.forChild(ThirdPage),
   ],
 })
-export class ModebreakPageModule {}
+export class ThirdPageModule {}
