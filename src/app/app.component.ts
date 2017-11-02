@@ -6,6 +6,7 @@ import { DefaultPage } from '../pages/default/default';
 import { SecondaryPageModule } from '../pages/secondary/secondary.module';
 import { SecondaryPage } from '../pages/secondary/secondary';
 import { ModebreakPage } from '../pages/modebreak/modebreak';
+import { NotapagePage } from '../pages/notapage/notapage';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,8 +22,10 @@ export class MyApp {
       {title: 'Default w/String', component: 'default', icon: 'md-bulb'},
       {title: 'Default w/Component', component: DefaultPage, icon: 'md-bulb'},
       {title: 'Secondary w/String', component: 'secondary', icon: 'md-bulb'},
-      {title: 'Secondary w/Component', component: SecondaryPage, icon: 'md-bulb'},
-      {title: 'Mode Break??', component: ModebreakPage, icon:'md-bulb'}
+      // {title: 'Secondary w/Component', component: SecondaryPage, icon: 'md-bulb'},
+      {title: 'Mode Break??', component: ModebreakPage, icon:'md-bulb'},
+      {title: 'Not a Page', component: NotapagePage, icon:'md-bulb'}
+
     ];
 
     platform.ready().then(() => {

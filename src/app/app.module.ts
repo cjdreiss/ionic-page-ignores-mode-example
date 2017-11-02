@@ -8,10 +8,12 @@ import { MyApp } from './app.component';
 import { DefaultPageModule } from '../pages/default/default.module';
 import { SecondaryPageModule } from '../pages/secondary/secondary.module';
 import { ModebreakPageModule } from '../pages/modebreak/modebreak.module';
+import { NotapagePage } from '../pages/notapage/notapage';
 
 @NgModule({
   declarations: [
     MyApp,
+    NotapagePage,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { ModebreakPageModule } from '../pages/modebreak/modebreak.module';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    NotapagePage,
   ],
   providers: [
     StatusBar,
