@@ -3,7 +3,7 @@ import { ComponentThatNeedsIonicComponent } from './component-that-needs-ionic/c
 import { IonicModule } from 'ionic-angular';
 @NgModule({
 	declarations: [ComponentThatNeedsIonicComponent],
-	imports: [IonicModule.forRoot(ComponentThatNeedsIonicComponent)],
+	imports: [],
 	exports: [ComponentThatNeedsIonicComponent]
 })
 export class ComponentsModule {}
