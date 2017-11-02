@@ -5,9 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { DefaultPageModule } from '../pages/default/default.module';
-import { SecondaryPageModule } from '../pages/secondary/secondary.module';
-import { ModebreakPageModule } from '../pages/modebreak/modebreak.module';
 
 @NgModule({
   declarations: [
@@ -15,9 +12,6 @@ import { ModebreakPageModule } from '../pages/modebreak/modebreak.module';
   ],
   imports: [
     BrowserModule,
-    DefaultPageModule,
-    SecondaryPageModule,
-    ModebreakPageModule,
     IonicModule.forRoot(MyApp, {
       mode: 'md',
       ios: {
