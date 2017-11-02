@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SecondaryPage } from '../secondary/secondary';
 
 /**
  * Generated class for the DefaultPage page.
@@ -31,11 +30,4 @@ export class DefaultPage {
           'params': 'string'
       })
   }
-
-  pushViaComponent(){
-      this.navCtrl.push(SecondaryPage, {
-          'params': 'component'
-      })
-  }
-
 }
